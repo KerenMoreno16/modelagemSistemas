@@ -1,0 +1,34 @@
+- Classes
+
+# Cliente
+Pacote mensal: Pacote[1]
+
+# Pacote mensal
+id: 1
+Lista de serviços = List<Servico>
+Desconto
+
+# Serviço
+id: 1
+Preço: 100,00 
+Plano: PlanoID[1]
+Categoria: CategoriaID[1]
+
+id: 2
+Preço: 150,00
+Plano: PlanoID[2]
+Categoria: CategoriaID[2]
+
+# Categoria 
+id: 1
+nome: Internet
+
+id: 2
+nome: TV a cabo
+
+# Plano
+id: 1
+nome: 50mb
+
+id: 2
+nome: 150mb
