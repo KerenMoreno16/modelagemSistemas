@@ -88,8 +88,4 @@ export class Categoria {
       return setTimeout(() => resolve(true), 250);
     });
   }
-
-  consultarCategoria() {
-    return this.listaCategoria;
-  }
 }
