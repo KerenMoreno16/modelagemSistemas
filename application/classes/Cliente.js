@@ -86,8 +86,4 @@ export class Cliente {
       return setTimeout(() => resolve(true), 250);
     });
   }
-
-  consultarCliente() {
-    return this.listaCliente;
-  }
 }
