@@ -86,8 +86,4 @@ export class Servico {
       return setTimeout(() => resolve(true), 250);
     });
   }
-
-  consultarServico() {
-    return this.listaServico;
-  }
 }
