@@ -68,16 +68,16 @@ export class Categoria {
         );
       }
 
-      users[id] = { ...users[id], ...data };
+      this.listaCategoria[id] = { ...this.listaCategoria[id], ...data };
       return setTimeout(() => resolve(true), 250);
     });
   }
 
   delete(id) {
     new Promise((resolve, reject) => {
-      const { [id]: user, ...rest } = this.listaCategoria;
+      const { [id]: categoria, ...rest } = this.listaCategoria;
 
-      if (!user) {
+      if (!categoria) {
         return setTimeout(
           () => reject(new Error("Não foi possível deletar a categoria")),
           250
