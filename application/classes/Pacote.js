@@ -64,16 +64,16 @@ export class Pacote {
         );
       }
 
-      users[id] = { ...users[id], ...data };
+      this.listaPacote[id] = { ...this.listaPacote[id], ...data };
       return setTimeout(() => resolve(true), 250);
     });
   }
 
   delete(id) {
     new Promise((resolve, reject) => {
-      const { [id]: user, ...rest } = this.listaPacote;
+      const { [id]: pacote, ...rest } = this.listaPacote;
 
-      if (!user) {
+      if (!pacote) {
         return setTimeout(
           () => reject(new Error("Não foi possível deletar o pacote")),
           250
