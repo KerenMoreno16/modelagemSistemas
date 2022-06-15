@@ -84,8 +84,4 @@ export class Pacote {
       return setTimeout(() => resolve(true), 250);
     });
   }
-
-  consultarPacote() {
-    return this.listaPacote;
-  }
 }
