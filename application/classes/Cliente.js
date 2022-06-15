@@ -66,16 +66,16 @@ export class Cliente {
         );
       }
 
-      users[id] = { ...users[id], ...data };
+      this.listaCliente[id] = { ...this.listaCliente[id], ...data };
       return setTimeout(() => resolve(true), 250);
     });
   }
 
   delete(id) {
     new Promise((resolve, reject) => {
-      const { [id]: user, ...rest } = this.listaCliente;
+      const { [id]: cliente, ...rest } = this.listaCliente;
 
-      if (!user) {
+      if (!cliente) {
         return setTimeout(
           () => reject(new Error("Não foi possível deletar o cliente")),
           250
