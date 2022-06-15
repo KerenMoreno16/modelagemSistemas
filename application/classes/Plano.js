@@ -82,8 +82,4 @@ export class Plano {
       return setTimeout(() => resolve(true), 250);
     });
   }
-
-  consultarPlano() {
-    return this.listaPlano;
-  }
 }
